@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://ddff55md3wkg1"]
+[gd_scene format=3 uid="uid://c6mrwvjaoq0aq"]
 
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="1_f50pn"]
 
@@ -60,20 +60,19 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vuua7"]
-radius = 20.784887
+radius = 20.486158
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=941459637]
 script = SubResource("GDScript_yf5fn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2116325162]
-position = Vector2(150, -182.99998)
+position = Vector2(89.000015, 183.00002)
 scale = Vector2(4.0074625, 4.007463)
 sprite_frames = SubResource("SpriteFrames_vuua7")
 animation = &"idle"
-frame_progress = 0.11914171
+frame_progress = 0.75889504
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366852902]
-position = Vector2(151.00002, -106.00001)
-
+position = Vector2(84, 267)
 scale = Vector2(4.0074625, 4.007463)
 shape = SubResource("CircleShape2D_vuua7")
