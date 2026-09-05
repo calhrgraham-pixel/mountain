@@ -4707,7 +4707,7 @@ sources/0 = SubResource("TileSetAtlasSource_hh5uf")
 [node name="Game" type="Node2D" unique_id=1433117702]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1001309231]
-position = Vector2(155, -9)
+position = Vector2(206, -3)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=650577658]
 position = Vector2(13, 111)
@@ -4715,9 +4715,6 @@ position = Vector2(13, 111)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1681534297]
 position = Vector2(81, 115)
 shape = SubResource("WorldBoundaryShape2D_5mqm5")
-
-[node name="CharacterBody2D" parent="." unique_id=941459637 instance=ExtResource("1_j2wod")]
-position = Vector2(13, 111)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=324713996]
 tile_set = SubResource("TileSet_g4v7s")
@@ -4727,5 +4724,5 @@ layer_0/tile_data = PackedInt32Array(-1310747, 1966080, 35, -1245211, 1966080, 3
 layer_1/name = "Mid"
 layer_1/tile_data = PackedInt32Array(655359, 65536, 36, 589824, 65536, 36, 589825, 65536, 36, 589826, 65536, 36, 589827, 65536, 36, 589828, 65536, 36, 589829, 65536, 36, 589830, 65536, 36, 589831, 65536, 36, 589832, 65536, 36, 589833, 65536, 36, 589834, 65536, 36, 589835, 65536, 36, 589836, 65536, 36, 589837, 65536, 36, 589838, 65536, 36, 589839, 65536, 36, 589840, 65536, 36, 589841, 65536, 36, 589842, 65536, 36, 589843, 65536, 36, 589844, 65536, 36, 589845, 65536, 36)
 
-[node name="CharacterBody2D" parent="." unique_id=941459637 instance=ExtResource("1_j2wod")]
-position = Vector2(13, 111)
+[node name="CharacterBody2D2" parent="." unique_id=451020555 instance=ExtResource("1_j2wod")]
+position = Vector2(0, 111)
