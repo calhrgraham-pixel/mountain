@@ -4702,10 +4702,6 @@ sources/0 = SubResource("TileSetAtlasSource_hh5uf")
 
 [node name="Game" type="Node2D" unique_id=1433117702]
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=669633560]
-
-[node name="Test" type="AnimatedSprite2D" parent="." unique_id=152365938]
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1001309231]
 position = Vector2(155, -9)
 
