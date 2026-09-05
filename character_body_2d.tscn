@@ -41,8 +41,8 @@ animations = [{
 "texture": SubResource("AtlasTexture_lhvu3")
 }],
 "loop": 1,
-"name": &"default",
-"speed": 3.5
+"name": &"idle",
+"speed": 11.5
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vuua7"]
@@ -51,12 +51,13 @@ radius = 17.476322
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=941459637]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2116325162]
-position = Vector2(129, 222.00002)
+position = Vector2(150, -182.99998)
 scale = Vector2(4.0074625, 4.007463)
 sprite_frames = SubResource("SpriteFrames_vuua7")
-frame_progress = 0.66675884
+animation = &"idle"
+frame_progress = 0.75889504
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366852902]
-position = Vector2(109, 285)
+position = Vector2(142, -134)
 scale = Vector2(4.0074625, 4.007463)
 shape = SubResource("CircleShape2D_vuua7")
