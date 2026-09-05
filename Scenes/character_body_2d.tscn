@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://c6mrwvjaoq0aq"]
 
+[ext_resource type="Script" uid="uid://dmlk52r5fhvlu" path="res://Scripts/pullToJump.gd" id="1_88kja"]
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="1_f50pn"]
 
 [sub_resource type="GDScript" id="GDScript_yf5fn"]
@@ -63,7 +64,7 @@ animations = [{
 radius = 4.15308
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=941459637]
-script = SubResource("GDScript_yf5fn")
+script = ExtResource("1_88kja")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2116325162]
 position = Vector2(123, 61.00003)
