@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://ddff55md3wkg1"]
+[gd_scene format=3 uid="uid://c6mrwvjaoq0aq"]
 
 [ext_resource type="Script" uid="uid://dmlk52r5fhvlu" path="res://Scripts/pullToJump.gd" id="1_88kja"]
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="1_f50pn"]
@@ -47,20 +47,20 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vuua7"]
-radius = 9.263069
+radius = 4.15308
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=941459637]
 script = ExtResource("1_88kja")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2116325162]
-position = Vector2(82.375, -81.057816)
-scale = Vector2(1.9888059, 1.9888061)
+position = Vector2(123, 61.00003)
+scale = Vector2(0.9141787, 0.91417885)
 sprite_frames = SubResource("SpriteFrames_vuua7")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.22297598
+frame_progress = 0.75889504
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366852902]
-position = Vector2(82, -34)
+position = Vector2(120.000015, 90)
 scale = Vector2(4.0074625, 4.007463)
 shape = SubResource("CircleShape2D_vuua7")
