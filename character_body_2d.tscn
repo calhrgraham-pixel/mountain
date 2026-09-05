@@ -2,6 +2,20 @@
 
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="1_f50pn"]
 
+[sub_resource type="GDScript" id="GDScript_yf5fn"]
+script/source = "extends CharacterBody2D
+
+@export var speed = 400
+
+func get_input():
+	var input_direction = Input.get_vector(\"left\",\"right\",\"up\",\"down\")
+	velocity = input_direction * speed
+	
+func _physics_process(_delta):
+	get_input()
+	move_and_slide()
+"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
 atlas = ExtResource("1_f50pn")
 region = Rect2(0, 51, 67, 101)
@@ -45,10 +59,16 @@ animations = [{
 "speed": 2.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D" unique_id=941459637]
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 20.396078
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2116325162]
-position = Vector2(100.75, -151.87688)
-scale = Vector2(4.0074625, 4.007463)
-sprite_frames = SubResource("SpriteFrames_vuua7")
-frame_progress = 0.62994623
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=941459637]
+script = SubResource("GDScript_yf5fn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1454271530]
+sprite_frames = SubResource("SpriteFrames_5mqm5")
+frame_progress = 0.05788573
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=107401945]
+position = Vector2(3, 19)
+shape = SubResource("CircleShape2D_g4v7s")
