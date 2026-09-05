@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b3qlo25aenq7k"]
 
+[ext_resource type="PackedScene" uid="uid://ddff55md3wkg1" path="res://Scenes/character_body_2d.tscn" id="1_j2wod"]
 [ext_resource type="PackedScene" uid="uid://bnfay667bps5g" path="res://Objects/firefly.tscn" id="2_hh5uf"]
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="2_v1qfn"]
 
@@ -4715,3 +4716,6 @@ layer_1/tile_data = PackedInt32Array(655359, 65536, 36, 589824, 65536, 36, 58982
 
 [node name="Firefly" parent="." unique_id=1514001632 instance=ExtResource("2_hh5uf")]
 position = Vector2(133, 48)
+
+[node name="CharacterBody2D" parent="." unique_id=941459637 instance=ExtResource("1_j2wod")]
+position = Vector2(44, 10)
