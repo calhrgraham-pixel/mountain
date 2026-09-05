@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b3qlo25aenq7k"]
 
-[ext_resource type="PackedScene" uid="uid://ddff55md3wkg1" path="res://Scenes/character_body_2d.tscn" id="1_j2wod"]
+[ext_resource type="PackedScene" uid="uid://bnfay667bps5g" path="res://Objects/firefly.tscn" id="2_hh5uf"]
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="2_v1qfn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hh5uf"]
@@ -4713,5 +4713,5 @@ layer_0/tile_data = PackedInt32Array(-1310747, 1966080, 35, -1245211, 1966080, 3
 layer_1/name = "Mid"
 layer_1/tile_data = PackedInt32Array(655359, 65536, 36, 589824, 65536, 36, 589825, 65536, 36, 589826, 65536, 36, 589827, 65536, 36, 589828, 65536, 36, 589829, 65536, 36, 589830, 65536, 36, 589831, 65536, 36, 589832, 65536, 36, 589833, 65536, 36, 589834, 65536, 36, 589835, 65536, 36, 589836, 65536, 36, 589837, 65536, 36, 589838, 65536, 36, 589839, 65536, 36, 589840, 65536, 36, 589841, 65536, 36, 589842, 65536, 36, 589843, 65536, 36, 589844, 65536, 36, 589845, 65536, 36)
 
-[node name="CharacterBody2D" parent="." unique_id=941459637 instance=ExtResource("1_j2wod")]
-position = Vector2(13, 111)
+[node name="Firefly" parent="." unique_id=1514001632 instance=ExtResource("2_hh5uf")]
+position = Vector2(133, 48)
