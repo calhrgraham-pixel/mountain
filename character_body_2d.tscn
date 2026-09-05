@@ -1,28 +1,28 @@
 [gd_scene format=3 uid="uid://ddff55md3wkg1"]
 
-[ext_resource type="Texture2D" uid="uid://dogpl45njt7t8" path="res://Assets/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="1_f50pn"]
+[ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="1_f50pn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
 atlas = ExtResource("1_f50pn")
-region = Rect2(2, 52, 59, 97)
+region = Rect2(0, 51, 67, 101)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ghijl"]
 atlas = ExtResource("1_f50pn")
-region = Rect2(61, 52, 59, 97)
+region = Rect2(67, 51, 67, 101)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_44cfe"]
 atlas = ExtResource("1_f50pn")
-region = Rect2(120, 52, 59, 97)
+region = Rect2(134, 51, 67, 101)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dd465"]
 atlas = ExtResource("1_f50pn")
-region = Rect2(179, 52, 59, 97)
+region = Rect2(201, 51, 67, 101)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lhvu3"]
 atlas = ExtResource("1_f50pn")
-region = Rect2(238, 52, 59, 97)
+region = Rect2(402, 51, 67, 101)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_5mqm5"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_vuua7"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -42,11 +42,13 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
-"speed": 5.0
+"speed": 2.0
 }]
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=941459637]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1454271530]
-sprite_frames = SubResource("SpriteFrames_5mqm5")
-frame_progress = 0.05788573
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2116325162]
+position = Vector2(100.75, -151.87688)
+scale = Vector2(4.0074625, 4.007463)
+sprite_frames = SubResource("SpriteFrames_vuua7")
+frame_progress = 0.62994623
