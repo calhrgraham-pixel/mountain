@@ -42,13 +42,21 @@ animations = [{
 }],
 "loop": 1,
 "name": &"default",
-"speed": 2.0
+"speed": 3.5
 }]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vuua7"]
+radius = 17.476322
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=941459637]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2116325162]
-position = Vector2(100.75, -151.87688)
+position = Vector2(129, 222.00002)
 scale = Vector2(4.0074625, 4.007463)
 sprite_frames = SubResource("SpriteFrames_vuua7")
-frame_progress = 0.62994623
+frame_progress = 0.66675884
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366852902]
+position = Vector2(109, 285)
+scale = Vector2(4.0074625, 4.007463)
+shape = SubResource("CircleShape2D_vuua7")
