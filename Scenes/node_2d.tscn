@@ -3,6 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://ddff55md3wkg1" path="res://Scenes/character_body_2d.tscn" id="1_j2wod"]
 [ext_resource type="PackedScene" uid="uid://bnfay667bps5g" path="res://Objects/firefly.tscn" id="2_hh5uf"]
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="2_v1qfn"]
+<<<<<<< HEAD
+=======
+[ext_resource type="Shader" uid="uid://cjnu0e52k8bih" path="res://Scenes/node_2d.gdshader" id="4_6whob"]
+[ext_resource type="PackedScene" uid="uid://kh0211ljrbgr" path="res://Objects/off_screen_indicator.tscn" id="5_u7krg"]
+[ext_resource type="FontFile" uid="uid://dv0rc2hrcmagc" path="res://PressStart2P-Regular.ttf" id="6_tx0tn"]
+>>>>>>> 0c2c83d (Progress Bar)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hh5uf"]
 texture = ExtResource("2_v1qfn")
@@ -4778,6 +4784,12 @@ trajectory_points = 45
 
 [node name="CanvasLayer" parent="Indicator" index="0" unique_id=1719195812]
 layer = 19
+
+[node name="CanvasLayer2" parent="Indicator" index="1" unique_id=1274249119]
+layer = 18
+
+[node name="ClimbProgressBar" parent="Indicator/CanvasLayer2" index="0" unique_id=503747992]
+theme_override_fonts/font = ExtResource("6_tx0tn")
 
 [node name="TrajectoryLayer" type="CanvasLayer" parent="." unique_id=2138265783]
 layer = 28
