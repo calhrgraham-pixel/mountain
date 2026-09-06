@@ -4743,9 +4743,6 @@ sources/0 = SubResource("TileSetAtlasSource_hh5uf")
 
 [node name="Game" type="Node2D" unique_id=1433117702]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1001309231]
-position = Vector2(206, -3)
-
 [node name="TileMap" type="TileMap" parent="." unique_id=324713996]
 tile_set = SubResource("TileSet_g4v7s")
 format = 2
@@ -4757,8 +4754,11 @@ layer_1/tile_data = PackedInt32Array(655354, 655360, 35, 720890, 655360, 36, 786
 [node name="Firefly" parent="." unique_id=1514001632 instance=ExtResource("2_hh5uf")]
 position = Vector2(133, 48)
 
+[node name="Camera2D" type="Camera2D" parent="Firefly" unique_id=1001309231]
+position = Vector2(73, -51)
+
 [node name="CharacterBody2D" parent="." unique_id=941459637 instance=ExtResource("1_j2wod")]
-position = Vector2(-57, 118)
+position = Vector2(-81, 24)
 
 [node name="Line2D" type="Line2D" parent="CharacterBody2D" unique_id=622452626]
 width = 2.0
