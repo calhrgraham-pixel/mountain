@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://c1tnoihaq5p1j"]
+
+[ext_resource type="Script" path="res://Scripts/controls_screen.gd" id="1_hepep"]
+[ext_resource type="Texture2D" path="res://assets 2.0/LOF Controls Screen.jpg" id="2_h8rug"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j3dus"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ffnw4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i7lls"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ut3rf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_r3wjj"]
+
+[node name="Controls Screen" type="Control" unique_id=1885883680]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hepep")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=126118842]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_h8rug")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Button" type="Button" parent="." unique_id=1344694321]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -3.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j3dus")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_ffnw4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_i7lls")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ut3rf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_r3wjj")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
