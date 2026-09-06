@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://r1sdhyaiexw5"]
+
+[ext_resource type="Script" uid="uid://gayfbnx5ioox" path="res://Scripts/audio file/music_controller.gd" id="1_7bf0p"]
+[ext_resource type="AudioStream" uid="uid://ht78eddrg62j" path="res://Assets/16bit_scary_chiptune.wav" id="2_h107r"]
+
+[node name="Music controller" type="Node2D" unique_id=1909396488]
+script = ExtResource("1_7bf0p")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1239275683]
+stream = ExtResource("2_h107r")
+volume_db = -4.164
+autoplay = true
