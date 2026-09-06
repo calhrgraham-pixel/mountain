@@ -4771,17 +4771,5 @@ launch_power = 7.0
 trajectory_points = 45
 >>>>>>> 8e0fcc7 (sliding and infinite jump fixed)
 
-<<<<<<< HEAD
 [node name="Line2D" type="Line2D" parent="CharacterBody2D" unique_id=622452626]
-=======
-[node name="Indicator" parent="." unique_id=1208407867 instance=ExtResource("5_u7krg")]
-
-[node name="CanvasLayer" parent="Indicator" index="0" unique_id=1719195812]
-layer = 19
-
-[node name="TrajectoryLayer" type="CanvasLayer" parent="." unique_id=2138265783]
-layer = 28
-
-[node name="Line2D" type="Line2D" parent="TrajectoryLayer" unique_id=622452626]
->>>>>>> 9eef0df (trajectory line bug fix)
 width = 2.0
