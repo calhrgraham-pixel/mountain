@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< Updated upstream
-uid="uid://dupvkwq5vdhd4"
-=======
-uid="uid://dke8l6s8vr2fu"
->>>>>>> Stashed changes
-path="res://.godot/imported/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png2.2.2..png-7760bb6a210621686faa2d77e5a58843.ctex"
+uid="uid://cmvyb15o23r43"
+path="res://.godot/imported/2.000.png-2150355af72492ea4346e9b3904eaac9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png2.2.2..png"
-dest_files=["res://.godot/imported/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png2.2.2..png-7760bb6a210621686faa2d77e5a58843.ctex"]
+source_file="res://2.000.png"
+dest_files=["res://.godot/imported/2.000.png-2150355af72492ea4346e9b3904eaac9.ctex"]
 
 [params]
 

@@ -2,9 +2,14 @@
 
 [ext_resource type="Script" uid="uid://dmlk52r5fhvlu" path="res://Scripts/pullToJump.gd" id="1_88kja"]
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="1_f50pn"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://dogpl45njt7t8" path="res://Assets/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="3_it8n0"]
 [ext_resource type="Texture2D" uid="uid://dupvkwq5vdhd4" path="res://Assets/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png2.2.2..png" id="4_pbq55"]
 [ext_resource type="Texture2D" uid="uid://bfn71alu0fkcb" path="res://Assets/2.333.png" id="5_t38ji"]
+=======
+[ext_resource type="Texture2D" uid="uid://bhm7o1tm7ajtu" path="res://Assets/2.000.png" id="3_pbq55"]
+[ext_resource type="Texture2D" uid="uid://dke8l6s8vr2fu" path="res://Assets/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png2.2.2..png" id="4_pbq55"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
 atlas = ExtResource("1_f50pn")
@@ -26,9 +31,19 @@ region = Rect2(201, 51, 67, 101)
 atlas = ExtResource("1_f50pn")
 region = Rect2(402, 51, 67, 101)
 
+<<<<<<< Updated upstream
 [sub_resource type="AtlasTexture" id="AtlasTexture_it8n0"]
 atlas = ExtResource("3_it8n0")
 region = Rect2(260, 186, 63, 86)
+=======
+[sub_resource type="AtlasTexture" id="AtlasTexture_t38ji"]
+atlas = ExtResource("3_pbq55")
+region = Rect2(0, 0, 73, 94)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbj7x"]
+atlas = ExtResource("4_pbq55")
+region = Rect2(0, 0, 59, 117)
+>>>>>>> Stashed changes
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vuua7"]
 animations = [{
@@ -54,6 +69,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+<<<<<<< Updated upstream
 "texture": SubResource("AtlasTexture_it8n0")
 }, {
 "duration": 1.0,
@@ -65,6 +81,16 @@ animations = [{
 "loop": 1,
 "name": &"jump",
 "speed": 8.0
+=======
+"texture": SubResource("AtlasTexture_t38ji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbj7x")
+}],
+"loop": 1,
+"name": &"jump",
+"speed": 2.9
+>>>>>>> Stashed changes
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vuua7"]
@@ -78,8 +104,13 @@ position = Vector2(82.375, -81.057816)
 scale = Vector2(1.9888059, 1.9888061)
 sprite_frames = SubResource("SpriteFrames_vuua7")
 animation = &"jump"
+<<<<<<< Updated upstream
 autoplay = "jump"
 frame_progress = 0.88807756
+=======
+autoplay = "idle"
+frame_progress = 0.90802294
+>>>>>>> Stashed changes
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1366852902]
 position = Vector2(82, -34)
