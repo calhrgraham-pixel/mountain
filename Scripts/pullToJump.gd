@@ -3,7 +3,7 @@ extends CharacterBody2D
 @export var max_drag_distance: float = 150.0
 @export var launch_power: float = 6.0
 @export var trajectory_points: int = 30
-@onready var line_2d: Line2D = $Line2D
+@onready var line_2d: Line2D = get_node("/root/Game/TrajectoryLayer/Line2D")
 
 var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_dragging: bool = false
@@ -47,11 +47,12 @@ func _physics_process(delta: float) -> void:
 
 func update_trajectory_preview(launch_velocity: Vector2) -> void:
 	line_2d.clear_points()
-	var sim_pos: Vector2 = Vector2.ZERO
+	var sim_pos: Vector2 = global_position
 	var sim_velocity: Vector2 = launch_velocity
 	var sim_delta: float = 0.05
+	var canvas_transform = get_viewport().get_canvas_transform()
 
 	for i in range(trajectory_points):
-		line_2d.add_point(sim_pos)
+		line_2d.add_point(canvas_transform * sim_pos)
 		sim_velocity.y += gravity * sim_delta
 		sim_pos += sim_velocity * sim_delta
