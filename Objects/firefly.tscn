@@ -24,10 +24,12 @@ animations = [{
 script = ExtResource("1_podwx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1383912964]
+position = Vector2(7, -23)
+scale = Vector2(0.9605263, 0.9408602)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"Fly"
-frame_progress = 0.9662362
+frame_progress = 0.6061452
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1118218695]
-position = Vector2(-7, 25)
+position = Vector2(0, -1)
 shape = SubResource("CircleShape2D_g4v7s")
