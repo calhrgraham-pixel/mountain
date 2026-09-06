@@ -4751,6 +4751,9 @@ shader_parameter/player_radius = 150.0
 shader_parameter/firefly_radius = 80.0
 shader_parameter/edge_softness = 40.0
 shader_parameter/fog_color = Color(0, 0, 0, 1)
+shader_parameter/noise_scale = 0.008
+shader_parameter/noise_strength = 40.0
+shader_parameter/scroll_speed = 0.05
 
 [sub_resource type="GDScript" id="GDScript_yf5fn"]
 resource_name = "fog"
@@ -4763,6 +4766,10 @@ func _process(_delta: float) -> void:
 	material.set_shader_parameter(\"player_screen_pos\", world_to_screen(player.global_position))
 	material.set_shader_parameter(\"firefly_screen_pos\", world_to_screen(firefly.global_position))
 
+func _ready() -> void:
+	material.set_shader_parameter(\"player_radius\", 80.0)
+	material.set_shader_parameter(\"firefly_radius\", 180.0)
+	
 func world_to_screen(world_pos: Vector2) -> Vector2:
 	var canvas_transform = get_viewport().get_canvas_transform()
 	return canvas_transform * world_pos
@@ -4808,12 +4815,16 @@ max_drag_distance = 170.0
 launch_power = 7.0
 trajectory_points = 45
 
-[node name="Line2D" type="Line2D" parent="CharacterBody2D" unique_id=622452626]
-width = 2.0
-
 [node name="Indicator" parent="." unique_id=1208407867 instance=ExtResource("5_u7krg")]
 
 [node name="CanvasLayer" parent="Indicator" index="0" unique_id=1719195812]
 layer = 19
+
+[node name="TrajectoryLayer" type="CanvasLayer" parent="." unique_id=2138265783]
+layer = 28
+
+[node name="Line2D" type="Line2D" parent="TrajectoryLayer" unique_id=622452626]
+position = Vector2(3, 110)
+width = 2.0
 
 [editable path="Indicator"]
