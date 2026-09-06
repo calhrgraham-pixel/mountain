@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bwq3xosd5geqq"]
+
+[ext_resource type="AudioStream" uid="uid://dxp4qoyat81rt" path="res://assets 2.0/16bit_scary_chiptune.wav" id="1_g5yuc"]
+
+[node name="music controller" type="Node2D" unique_id=1852827858]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1352773521]
+stream = ExtResource("1_g5yuc")
+volume_db = 24.0
+autoplay = true

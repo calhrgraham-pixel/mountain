@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dxp4qoyat81rt"
+path="res://.godot/imported/16bit_scary_chiptune.wav-d96d68e2b54612f70c243647a7693236.sample"
+
+[deps]
+
+source_file="res://assets 2.0/16bit_scary_chiptune.wav"
+dest_files=["res://.godot/imported/16bit_scary_chiptune.wav-d96d68e2b54612f70c243647a7693236.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=20
+edit/loop_end=-1
+compress/mode=2

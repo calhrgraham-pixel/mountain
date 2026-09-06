@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dpo68gq2nah7r"]
+
+[ext_resource type="Script" path="res://Scenes/end_screen.gd" id="1_bhpww"]
+[ext_resource type="Texture2D" path="res://assets 2.0/LeapOfFaithEndScreen.png" id="1_f2mtv"]
+[ext_resource type="FontFile" path="res://PressStart2P-Regular.ttf" id="2_1gwaw"]
+
+[node name="EndScreen" type="Control" unique_id=1075129451]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bhpww")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=151998090]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_f2mtv")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Button" type="Button" parent="." unique_id=520683368]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_1gwaw")
+text = "End"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
