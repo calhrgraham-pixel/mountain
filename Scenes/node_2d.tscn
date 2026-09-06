@@ -4783,5 +4783,8 @@ layer = 19
 layer = 28
 
 [node name="Line2D" type="Line2D" parent="TrajectoryLayer" unique_id=622452626]
+<<<<<<< HEAD
+>>>>>>> 9eef0df (trajectory line bug fix)
+=======
 >>>>>>> 9eef0df (trajectory line bug fix)
 width = 2.0
