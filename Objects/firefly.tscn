@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bnfay667bps5g"]
+
+[ext_resource type="Script" uid="uid://bfqwy816c0mbc" path="res://Scripts/8DMovement.gd" id="1_podwx"]
+[ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="2_arxdl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mh53l"]
+atlas = ExtResource("2_arxdl")
+region = Rect2(912, 0, 76, 93)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mh53l")
+}],
+"loop": 1,
+"name": &"Fly",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+
+[node name="Firefly" type="CharacterBody2D" unique_id=1514001632]
+script = ExtResource("1_podwx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1383912964]
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"Fly"
+frame_progress = 0.9662362
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1118218695]
+position = Vector2(-7, 25)
+shape = SubResource("CircleShape2D_g4v7s")
