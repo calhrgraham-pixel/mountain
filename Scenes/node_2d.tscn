@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://b3qlo25aenq7k"]
 
-[ext_resource type="PackedScene" uid="uid://ddff55md3wkg1" path="res://Scenes/character_body_2d.tscn" id="1_j2wod"]
+[ext_resource type="PackedScene" uid="uid://c6mrwvjaoq0aq" path="res://Objects/character_body_2d.tscn" id="1_j2wod"]
 [ext_resource type="PackedScene" uid="uid://bnfay667bps5g" path="res://Objects/firefly.tscn" id="2_hh5uf"]
 [ext_resource type="Texture2D" uid="uid://dwa1ondoeyvn5" path="res://assets 2.0/ChatGPT Image Sep 5, 2026, 11_41_46 AM.png" id="2_v1qfn"]
 [ext_resource type="Shader" uid="uid://cjnu0e52k8bih" path="res://Scenes/node_2d.gdshader" id="4_6whob"]
+[ext_resource type="PackedScene" uid="uid://kh0211ljrbgr" path="res://Objects/off_screen_indicator.tscn" id="4_6whob"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hh5uf"]
 texture = ExtResource("2_v1qfn")
@@ -4812,3 +4813,7 @@ trajectory_points = 45
 
 [node name="Line2D" type="Line2D" parent="TrajectoryLayer/CharacterBody2D" unique_id=622452626]
 width = 2.0
+
+[node name="Indicator" parent="." unique_id=1208407867 instance=ExtResource("4_6whob")]
+
+[editable path="Indicator"]
