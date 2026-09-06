@@ -4,12 +4,13 @@ extends CharacterBody2D
 @export var launch_power: float = 6.0
 @export var trajectory_points: int = 30 # How long the dotted path is
 
+
 @onready var line_2d: Line2D = $Line2D # Ensure you have a Line2D node
 
 var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity")
 var is_dragging: bool = false
 var drag_start_pos: Vector2 = Vector2.ZERO
-
+var ground_friction: float = 25.0 # Higher number = faster stop / less sliding
 func _physics_process(delta: float) -> void:
 	# Apply standard platformer gravity
 	if not is_on_floor() and not is_dragging:
@@ -38,6 +39,12 @@ func _physics_process(delta: float) -> void:
 			is_dragging = false
 			line_2d.clear_points()
 			velocity = launch_velocity
+			
+			# 3. Apply heavy friction immediately when touching the floor
+		if is_on_floor() and not is_dragging:
+			# Linearly interpolates velocity.x to 0 based on ground_friction rate
+			velocity.x = move_toward(velocity.x, 0.0, ground_friction * delta)
+
 
 	move_and_slide()
 
