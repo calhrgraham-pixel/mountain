@@ -4831,7 +4831,6 @@ theme_override_fonts/font = ExtResource("6_tx0tn")
 layer = 28
 
 [node name="Line2D" type="Line2D" parent="TrajectoryLayer" unique_id=622452626]
-position = Vector2(3, 110)
 width = 2.0
 
 [editable path="Indicator"]
