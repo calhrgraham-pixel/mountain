@@ -4758,7 +4758,10 @@ position = Vector2(133, 48)
 position = Vector2(73, -51)
 
 [node name="CharacterBody2D" parent="." unique_id=941459637 instance=ExtResource("1_j2wod")]
-position = Vector2(-81, 24)
+position = Vector2(-64, 27)
+max_drag_distance = 170.0
+launch_power = 7.0
+trajectory_points = 45
 
 [node name="Line2D" type="Line2D" parent="CharacterBody2D" unique_id=622452626]
 width = 2.0
