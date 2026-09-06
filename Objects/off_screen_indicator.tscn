@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://g562xegpy5mx" path="res://Objects/off_screen_indicator.gd" id="1_duinn"]
 [ext_resource type="Texture2D" uid="uid://utfho4s0uqox" path="res://assets 2.0/aroow.png" id="1_etpbn"]
 [ext_resource type="Script" uid="uid://c8657i7gckdnw" path="res://Objects/climb_progress_bar.gd" id="3_duinn"]
+[ext_resource type="FontFile" uid="uid://dv0rc2hrcmagc" path="res://PressStart2P-Regular.ttf" id="4_adhr4"]
+[ext_resource type="Script" uid="uid://3s8nfwfuwcj2" path="res://Objects/end_button.gd" id="5_04rb3"]
 
 [sub_resource type="GDScript" id="GDScript_adhr4"]
 
@@ -36,5 +38,23 @@ offset_bottom = 27.0
 grow_horizontal = 2
 value = 25.0
 script = ExtResource("3_duinn")
-start_y = 134.933
-goal_y = -12857.067
+end_button_path = NodePath("../EndButton")
+
+[node name="EndButton" type="Button" parent="CanvasLayer2" unique_id=414607345]
+visible = false
+custom_minimum_size = Vector2(160, 60)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -80.0
+offset_top = -60.0
+offset_right = 80.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("4_adhr4")
+text = "End"
+script = ExtResource("5_04rb3")
+
+[connection signal="pressed" from="CanvasLayer2/EndButton" to="CanvasLayer2/EndButton" method="_on_pressed"]
